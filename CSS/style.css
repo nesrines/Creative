@@ -6,18 +6,32 @@
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
 }
-
-.divider
-{
+.divider{
     height: 3.25px;
     max-width: 52px;
     border: 0;
     border-top: 1px solid;
     margin: 24px auto;
 }
+h1, h2, h3{
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+h2{
+    font-size: 32px;
+}
+p{
+    font-family: 'Merriweather', serif;
+}
+a{
+    font-size: 13.6px;
+    font-weight: bolder;
+    padding: 20px 36px;
+    border-radius: 160px;
+}
 
-header
-{
+header{
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);
     height: 100vh;
     background-position: center;
@@ -25,143 +39,154 @@ header
     background-attachment: scroll;
     background-size: cover;
 }
-
-header nav
-{ padding: 16px 0; }
-
-header nav .container
-{
+header nav{
+    padding: 16px 0;
+}
+header nav .container{
     padding: 0 48px;
     margin: 0 51.5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }   
-
-header nav .container a
-{
+header nav .container a{
     color: #FFFFFFB3;
     font-weight: 700;
 }
-
-header nav .container .brand
-{
+header nav .container .brand{
     margin-right: 16px;
     font-size: 20px;
     padding: 5px 0;
 }
-
-header nav .container .links a
-{
+header nav .container .links a{
     padding: 0 16px;
     font-size: 14.4px;
 }
-
-header .center
-{
-    margin: 24vh 30vh;
+header .center{
+    width: calc(100%/3*2);
+    margin: 24vh auto;
     padding: 0 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-header .center .top
-{padding: 0 24px;}
-
-header .center .top h1
-{
-    margin-bottom: 8px;
+header .center .top{
+    padding: 0 24px;
+}
+header .center .top h1{
     font-size: 56px;
-    font-weight: 400;
-    line-height: 1.2;
     color: #FFFFFF;
 }
-
-header .center .top .divider
-{background-color: #F4623A;}
-
-header .center .bottom
-{
+header .center .top .divider{
+    background-color: #F4623A;
+}
+header .center .bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 24px;
 }
-
-header .center .bottom p
-{
-    font-family: 'Merriweather', serif;
+header .center .bottom p{
     font-size: 18.4px;
     line-height: 1.5;
     color: #FFFFFFBF;
-    display: block;
     margin-bottom: 48px;
 }
-
-header .center .bottom a
-{
-    font-size: 13.6px;
-    font-weight: bolder;
+header .center .bottom a{
     color: #FFFFFF;
     background-color: #F4623A;
-    padding: 20px 36px;
-    border-radius: 160px;
 }
 
-#about
-{
+#about{
     background-color: #F4623A;
     padding: 128px 0;
 }
-
-#about .center
-{
-    margin: 0 30vh;
+#about .center{
+    width: calc(100%/3*2);
+    margin: 0 auto;
     padding: 0 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-#about .center .top
-{padding: 0 24px;}
-
-#about .center .top h2
-{
-    color: #ffffff;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 8px;
+#about .center .top{
+    padding: 0 24px;
 }
-
-#about .center .top .divider
-{background-color: #FFFFFF;}
-
-#about .center .bottom
-{
+#about .center .top h2{
+    color: #ffffff;
+}
+#about .center .top .divider{
+    background-color: #FFFFFF;
+}
+#about .center .bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 24px;
 }
-
-#about .center .bottom p
-{
-    font-family: 'Merriweather', serif;
+#about .center .bottom p{
     font-size: 16px;
     line-height: 1.5;
     color: #FFFFFFBF;
     margin-bottom: 24px;
 }
-
-#about .center .bottom a
-{
-    font-size: 13.6px;
-    font-weight: bolder;
+#about .center .bottom a{
     color: #000000;
     background-color: #f8f9fa;
-    padding: 20px 36px;
-    border-radius: 160px;
+}
+
+#services{
+    padding: 128px 48px;
+    width: calc(100%/3*2);
+    margin: 0 auto;
+}
+#services .top{
+    padding: 0 24px;
+}
+#services .top h2{
+    color: #212529;
+}
+#services .top .divider{
+    background-color: #F4623A;
+}
+#services .bottom{
+    display: flex;
+    justify-content: center;
+}
+#services .bottom .box{
+    padding: 0 24px;
+}
+#services .bottom .icon{
+    color: #F4623A;
+    font-size: 40px;
+    margin: 48px 0 16px;
+}
+#services .bottom .box h3{
+    color: #212529;
+    font-size: 24px;
+}
+#services .bottom .box p{
+    color: #6c757d;
+    font-size: 16px;
+}
+
+#portfolio .pics{
+    display: flex;
+    flex-wrap: wrap;
+}
+#portfolio .pics .pic{
+    width: calc(100%/3);
+}
+#portfolio .download{
+    background-color: #212529;
+    color: #ffffff;
+    padding: 128px 48px;
+    margin: 0 auto;
+}
+#portfolio .download h2{
+    margin-bottom: 40px;
+}
+#portfolio .download a{
+    background-color: #f8f9fa;
+    color: #000000;
 }
